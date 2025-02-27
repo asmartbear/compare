@@ -17,7 +17,7 @@ test("total ordering", () => {
       const a = TOTAL_ORDERING[i];
       const b = TOTAL_ORDERING[j];
       const cmp = compare(a, b)
-      console.log(a, b, cmp)
+      // console.log(a, b, cmp)
       if (i < j) expect(cmp).toBeLessThan(0);
       if (i === j) expect(cmp).toBe(0);
       if (i > j) expect(cmp).toBeGreaterThan(0);
